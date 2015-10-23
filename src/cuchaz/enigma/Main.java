@@ -15,9 +15,12 @@ import java.util.jar.JarFile;
 
 import cuchaz.enigma.gui.Gui;
 
+import javax.swing.*;
+
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
+		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		Gui gui = new Gui();
 		
 		// parse command-line args
